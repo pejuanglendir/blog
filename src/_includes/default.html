@@ -50,6 +50,33 @@
       <!-- Netlify Identity Widget -->
       <!-- Needed only if you are using Netlify Identity feature -->
       <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      <script>
+        const text = new SplitType('#headline', { types: 'words, chars' })
+        let hero = gsap.timeline(); //create the timeline
+        hero.from(".char", {
+          opacity:0,
+          y:100,
+          stagger: .05,
+          rotate:25,
+          ease: "back.out(1.7)",
+        }) //start sequencing
+          .from(".description", {opacity:0, y: 20, ease: "back.out(1.7)", duration: 3}, 1);
+
+
+          gsap.to(".target", {
+          duration: 1,
+          y: -20,
+          repeat: -1,
+          yoyo: true,
+          ease: "sine.inOut",
+          scrollTrigger: {
+              trigger: "#hero-section",
+              start: "top bottom",
+              toggleActions: "play pause play pause"
+          }
+      });
+      </script>
+
         
 
     {% endif %}
