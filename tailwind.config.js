@@ -7,17 +7,17 @@ module.exports = {
     extend: {
       colors: {},
     },
+    fontFamily: {
+      sans: [
+        "Inter var, sans-serif",
+        {
+          fontFeatureSettings: '"cv11", "ss01"',
+          fontVariationSettings: '"opsz" 32'
+        },
+      ],
+    },
+  
   },
   variants: {},
   plugins: [require("@tailwindcss/typography")],
-  fontFamily: {
-    sans: [
-      "Inter var, sans-serif",
-      {
-        fontFeatureSettings: '"cv11", "ss01"',
-        fontVariationSettings: '"opsz" 32'
-      },
-    ],
-  },
-
 };
