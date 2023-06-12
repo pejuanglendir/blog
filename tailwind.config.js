@@ -8,7 +8,7 @@ module.exports = {
       colors: {},
       fontFamily: {
         'headline': ['"Syne"', 'sans-serif'],
-      }
+      },
     }
   },
   variants: {},
