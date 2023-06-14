@@ -1,12 +1,12 @@
 module.exports = {
   content: ["./**/*.html"],
   theme: {
-    container: {
-      center: true,
-    },
     fontFamily: {
       display: ['Inter', 'system-ui', 'sans-serif'],
       body: ['Inter', 'system-ui', 'sans-serif'],
+    },
+    container: {
+      center: true,
     },
     extend: {
       colors: {},
