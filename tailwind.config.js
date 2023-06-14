@@ -1,10 +1,6 @@
 module.exports = {
   content: ["./**/*.html"],
   theme: {
-    fontFamily: {
-      display: ['Inter', 'system-ui', 'sans-serif'],
-      body: ['Inter', 'system-ui', 'sans-serif'],
-    },
     container: {
       center: true,
     },
@@ -12,6 +8,8 @@ module.exports = {
       colors: {},
       fontFamily: {
         'headline': ['"Syne"', 'sans-serif'],
+        display: ['Inter', 'system-ui', 'sans-serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],  
       },
     }
   },
