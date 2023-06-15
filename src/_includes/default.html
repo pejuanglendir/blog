@@ -23,6 +23,9 @@
   <body class="bg-black" data-barba="wrapper">
     <div class="wrapper">
     {% include "./partials/navbar.html" %}
+  </div>
+
+  <main data-barba="container" data-barba-namespace="home">
 
     {{ content | safe }}
 
@@ -85,6 +88,6 @@
         
 
     {% endif %}
-    </div>
+  </main>
   </body>
 </html>
