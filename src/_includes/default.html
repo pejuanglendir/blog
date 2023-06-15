@@ -20,7 +20,8 @@
 
     {% endif %}
   </head>
-  <body class="bg-black">
+  <body class="bg-black" data-barba="wrapper">
+    <div class="wrapper">
     {% include "./partials/navbar.html" %}
 
     {{ content | safe }}
@@ -29,6 +30,7 @@
 
     <script src="/static/js/alpine.js"></script>
     <script src='https://unpkg.com/split-type'></script>
+    <script src="https://unpkg.com/@barba/core"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js'></script>
     <script src='https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js'></script>
@@ -83,6 +85,6 @@
         
 
     {% endif %}
-
+    </div>
   </body>
 </html>
