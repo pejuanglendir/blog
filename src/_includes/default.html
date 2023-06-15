@@ -51,6 +51,26 @@
       requestAnimationFrame(raf)
       
       gsap.registerPlugin(ScrollTrigger);
+      
+      function pageTransition() {
+        var tl = gsap.timeline();
+
+        tl.to(".transition li", {
+            duration: 0.5,
+            scaleY: 1,
+            transformOrigin: "bottom left",
+            stagger: 0.2,
+        });
+
+        tl.to(".transition li", {
+            duration: 0.5,
+            scaleY: 0,
+            transformOrigin: "bottom left",
+            stagger: 0.1,
+            delay: 0.1,
+        });
+    }
+
       </script>
 
 
